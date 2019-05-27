@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
+
+    <title>Kirin Store</title>
+  </head>
+  <body>
+  	<head>
+  		<div class="header-top">
+  			<ul class="items-list">
+  				<li>
+	  				<ul class="sign-in">
+		  				<li><a href="#">Sign in</a></li>
+	  					<li><a href="#">Create new account</a></li>
+  					</ul>
+  				</li>
+  				<li>
+  					<ul class="items-social">
+  						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+  						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+  						<li><a href="#"><i class="fab fa-google"></i></a></li>
+  						<li><a href="#"><i class="fab fa-vine"></i></a></li>
+  						<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+  					</ul>
+  				</li>
+  			</ul>
+  		</div>
+  		<div class="header-middle">
+  			<div class="logo">
+  				<a href="index.html"><img src="images/logo.png"></a>
+  			</div>
+        <div class="list-info">
+          <ul>
+            <li>
+              <div class="info-block address">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <div class="info-body">
+                  <span>Address: </span>
+                  <a href="#">4578 Marmora Road, Glasgow, D04 89GR</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="info-block address">
+                <i class="fas fa-phone fa-2x"></i>
+                <div class="info-body">
+                  <span>Phone: </span>
+                  <span>(800) 123-0045 (800) 123-0045</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="info-block address">
+                <i class="fas fa-clock fa-2x"></i>
+                <div class="info-body">
+                  <span>We are open: </span>
+                  <span>Mn-Fr: 10 am-8 pm</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+  		</div>
+  		<div class="header-bottom">
+        <ul class="nav">
+          <li id="home" class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+            <ul id="sub-menu" class="sub-menu">
+              <li><a href="#">Home 1</a></li>
+              <li><a href="#">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SHOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EVENT</a>
+          </li>
+        </ul>
+        <i class="fas fa-cart-plus fa-2x"></i>
+      </div>
+  	</head>
+
+    <div class="container-custom">
+      <div class="breadcrumbs-custom">
+        <p class="breadcrumbs-title">Cart</p>
+        <ul class="breadcrumbs-path">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Shop</a>
+          </li>
+          <li>Cart</li>
+        </ul>
+      </div>
+      <div class="content">
+        <table class="table-cart">
+          <thead>
+            <tr>
+              <th colspan="2">product</th>
+              <th>price</th>
+              <th>quantity</th>
+              <th>total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td >
+                <i class="remove-item fas fa-times fa-2x"></i>
+              </td>
+              <td>
+                <div class="unit">
+                  <div class="unit-left">
+                    <img src="images/p1.jpg">
+                  </div>
+                  <div class="unit-right">
+                    <a href="#">Adidas Originals Trefoil Logo Snapback Trucker Cap</a>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="product-price">$45</div>
+              </td>
+              <td>
+                <div class="product-amount">                  
+                  <input type="number" value="1">
+                </div>
+              </td>
+              <td>
+                <div class="product-price">$45</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="coupon">
+          <div class="coupon-code"> 
+            <input type="type" name="code" placeholder="Enter Code">
+            <button class="button-apply">apply coupon</button>           
+          </div>
+          <button class="update-card">Update Card</button>
+        </div>
+
+        <div class="total-main">
+          <div class="subtotal">Subtotal: $45</div>
+          <div class="total">Total: $45</div>
+        </div>
+        
+        <div class="checkout">
+          <button class="button-buy">Proceed to checkout</button>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <img src="images/logo.png">
+        <ul>
+          <li>Address: 4578 Marmora Road, Glasgow, D04 89GR</li>
+          <li>Phones: (800) 123-0045 (800) 123-0045</li>
+          <li>E-mail: info@demolink.org</li>
+          <li>We are open Mn-Fr: 10 am-8 pm</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>

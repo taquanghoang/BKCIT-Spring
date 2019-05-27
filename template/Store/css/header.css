@@ -1,0 +1,151 @@
+.header-top {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding: 15px 0;
+}
+
+ul {
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.header-top ul li {
+	display: inline-block;
+	padding: 0 8px;
+}
+
+.items-social::before {
+	content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -8px;
+    width: 1px;
+    height: 32px;
+    background: #ececee;
+}
+
+.header-middle {
+	display: flex;
+	width: 100%;
+	padding: 30px 0;
+	border-top: 1px solid #ececee;
+}
+
+.logo {
+	margin: 0 auto 0 15px;
+}
+
+.logo img {
+	width: 180px;
+}
+
+.info-block {
+	display: flex;
+}
+
+.info-block i {
+	color: #2ed3ae;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.info-block .info-body {
+	display: flex;
+	flex-direction: column;
+}
+
+.info-body span:nth-child(2) {
+	color: #888888;
+}
+
+.info-body a {
+	color: #888888;
+}
+
+.info-body a:hover {
+	color: #2ed3ae;
+	text-decoration: none;
+}
+
+.list-info {
+	margin-right: 15px;
+}
+
+.list-info ul li {
+	display: inline-block;
+	padding: 0 8px;
+}
+
+.header-bottom {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+	border-top: 1px solid #ececee;
+}
+
+.header-bottom i {
+	color: #2ed3ae;
+	margin-right: 15px;
+}
+
+.header-bottom li {
+	padding: 15px 0;
+}
+
+.header-bottom a {
+	color: #000;
+	transition: .33s all ease;
+}
+
+
+.header-bottom a:hover {
+	color: #2ed3ae;
+	text-decoration: none;
+}
+
+.slides {
+	height: 800px;
+	background-image: url("../images/kirin-store.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.nav-item {
+	position: relative;
+}
+
+.sub-menu {
+	position: absolute;
+	width: 150px;
+	z-index: 5;
+	display: block;
+	opacity: 0;
+	top: 37px;
+	left: 0;
+	visibility: hidden;
+	background-color: #fff;
+	transform: translateY(30px);
+	transition: .33s all ease;
+}
+
+.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.show li a {
+	margin-left: 15px;
+}
+
+.container-custom {
+	flex: 1;
+	margin-bottom: 30px;
+}
